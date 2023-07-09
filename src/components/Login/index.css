@@ -1,0 +1,115 @@
+.login-container {
+  height: 100vh;
+  background-color: #0c0b10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .login-container {
+    background-image: cover;
+    background-image: url('https://res.cloudinary.com/dorgvlsce/image/upload/v1688788330/movies%20app/netfilx_login_image.png');
+  }
+}
+.nav-container {
+  width: 90%;
+}
+.nav-responsive-container {
+  margin-top: 35px;
+}
+.login-logo {
+  width: 100px;
+  height: 27px;
+}
+@media screen and (min-width: 768px) {
+  .login-logo {
+    width: 180px;
+    height: 52px;
+  }
+}
+
+.form-container {
+  background-color: #0c0b10;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .form-container {
+    margin: auto;
+    width: 456px;
+    max-width: 1400px;
+    margin-top: 80px;
+    opacity: 85%;
+    padding: 28px;
+  }
+}
+
+.login-heading {
+  color: #ffffff;
+  align-self: flex-start;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .login-heading {
+    align-self: center;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+.input-label {
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.user-input-field {
+  font-size: 14px;
+  height: 40px;
+  background-color: #333333;
+  color: #e2e8f0;
+  border-radius: 2px;
+  border: none;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+  font-weight: 400;
+}
+.error-message {
+  align-self: start;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'HK Grotesk';
+  font-size: 14px;
+  line-height: 18px;
+  color: #dc2626;
+}
+.login-button {
+  font-family: 'HK Grotesk';
+  font-weight: 700;
+  font-size: 14px;
+  color: #f8fafc;
+  height: 40px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: #e50914;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
