@@ -43,8 +43,8 @@
     width: 456px;
     max-width: 1400px;
     margin-top: 80px;
-    opacity: 85%;
     padding: 28px;
+    background-color: rgba(19, 19, 19, 0.8);
   }
 }
 

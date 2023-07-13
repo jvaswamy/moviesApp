@@ -58,9 +58,10 @@ class Login extends Component {
     this.setState({password: event.target.value})
   }
 
-  onSubmitSuccess = responseData => {
-    const jwtToken = responseData
-    Cookies.set('jwt_token', jwtToken, {expires: 10})
+  onSubmitSuccess = jwtToken => {
+    Cookies.set('jwt_token', jwtToken, {
+      expires: 10,
+    })
     const {history} = this.props
     history.replace('/')
   }
@@ -81,7 +82,7 @@ class Login extends Component {
     const response = await fetch(url, options)
     const responseData = await response.json()
     if (response.ok === true) {
-      this.onSubmitSuccess(responseData)
+      this.onSubmitSuccess(responseData.jwt_token)
       this.setState({username: '', password: ''})
     } else {
       this.onSubmitFailure(responseData.error_msg)
@@ -94,6 +95,7 @@ class Login extends Component {
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
     }
+
     return (
       <div className="login-container">
         <nav className="nav-container">

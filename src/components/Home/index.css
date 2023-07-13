@@ -1,0 +1,150 @@
+.home-container {
+  background-color: #131313;
+  min-height: 100vh;
+}
+/* loader view */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 200px;
+  background-color: #0d0d0d;
+  margin-top: 28px;
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .loader-container {
+    width: 85%;
+    height: 320px;
+    margin-top: 0px;
+  }
+}
+/* failure container */
+.failure-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ffffff;
+}
+.failure-btn {
+  outline: none;
+  cursor: pointer;
+  border-radius: 1px;
+  border: none;
+  height: 20px;
+  font-size: 12px;
+}
+
+/* poster container */
+.poster-container {
+  height: 300px;
+  background-size: cover;
+  background-position: top;
+  box-shadow: inset -10px -60px 50px #131313;
+}
+@media screen and (min-width: 768px) {
+  .poster-container {
+    height: 400px;
+  }
+}
+
+.poster-responsive-container {
+  width: 85%;
+  margin: auto;
+}
+.poster-title {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .poster-title {
+    font-size: 28px;
+    margin-top: 80px;
+  }
+}
+.poster-description {
+  color: #ffffff;
+  font-size: 14px;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .poster-description {
+    width: 45%;
+  }
+}
+.poster-button {
+  width: 90px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #131313;
+  font-size: 16px;
+  height: 30px;
+}
+
+/* home movies container */
+.home-movies-container {
+  width: 85%;
+  margin: auto;
+}
+
+.movie-category-heading {
+  color: #ffffff;
+  /* margin-top: 0px; */
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .movie-category-heading {
+    font-size: 26px;
+  }
+}
+.movie-category-container {
+}
+
+/* original views failure container */
+.failure-loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 120px;
+  background-color: #0d0d0d;
+  margin-top: 28px;
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .failure-loader-container {
+    height: 150px;
+    margin-top: 0px;
+  }
+}
+.failure-text {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .failure-text {
+    font-size: 14px;
+  }
+}
+.failure-btn {
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  height: 18px;
+  font-size: 9px;
+}
+@media screen and (min-width: 768px) {
+  .failure-btn {
+    height: 20px;
+    font-size: 12px;
+  }
+}

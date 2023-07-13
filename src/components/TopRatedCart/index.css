@@ -1,0 +1,42 @@
+/* failure views */
+.failure-loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 120px;
+  background-color: #0d0d0d;
+  margin-top: 28px;
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .failure-loader-container {
+    height: 150px;
+    margin-top: 0px;
+  }
+}
+.failure-text {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .failure-text {
+    font-size: 14px;
+  }
+}
+.failure-btn {
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  height: 18px;
+  font-size: 9px;
+}
+@media screen and (min-width: 768px) {
+  .failure-btn {
+    height: 20px;
+    font-size: 12px;
+  }
+}
