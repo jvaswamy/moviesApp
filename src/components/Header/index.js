@@ -43,7 +43,9 @@ class Header extends Component {
               type="button"
               data-testid="searchButton"
             >
-              <HiOutlineSearch size={24} color="#ffffff" />
+              <Link to="/">
+                <HiOutlineSearch size={24} color="#ffffff" />
+              </Link>
             </button>
             <button
               type="button"

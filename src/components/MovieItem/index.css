@@ -1,0 +1,22 @@
+.movie-list-item {
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+@media screen and (min-width: 768px) {
+  .movie-list-item {
+    margin-bottom: 8px;
+    margin-right: 9px;
+  }
+}
+.movie-item-image {
+  border-radius: 5px;
+  height: 70px;
+  width: 95px;
+}
+@media screen and (min-width: 768px) {
+  .movie-item-image {
+    height: 130px;
+    width: 200px;
+    flex-grow: 1;
+  }
+}
