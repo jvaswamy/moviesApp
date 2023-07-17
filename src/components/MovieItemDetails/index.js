@@ -4,6 +4,7 @@ import Loader from 'react-loader-spinner'
 import format from 'date-fns/format'
 import Header from '../Header'
 import MovieItem from '../MovieItem'
+import Footer from '../Footer'
 
 import './index.css'
 
@@ -96,7 +97,7 @@ class MovieItemDetails extends Component {
 
   renderSuccesView = () => {
     const {movieDetails} = this.state
-    console.log(movieDetails)
+
     const {
       backdropPath,
       title,
@@ -172,6 +173,7 @@ class MovieItemDetails extends Component {
             <MovieItem key={eachItem.id} itemDetails={eachItem} />
           ))}
         </ul>
+        <Footer />
       </>
     )
   }

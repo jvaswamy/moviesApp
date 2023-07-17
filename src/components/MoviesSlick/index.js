@@ -41,11 +41,11 @@ class MoviesSlick extends Component {
     return (
       <Slider {...settings}>
         {moviesList.map(eachMovie => {
-          const {id, posterPath, title} = eachMovie
+          const {id, posterPath, name} = eachMovie
           return (
             <div className="slick-item" key={id}>
               <Link to={`movies/${id}`}>
-                <img src={posterPath} className="slick-logo" alt={title} />
+                <img src={posterPath} className="slick-logo" alt={name} />
               </Link>
             </div>
           )

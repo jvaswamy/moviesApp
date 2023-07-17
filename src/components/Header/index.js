@@ -32,7 +32,7 @@ class Header extends Component {
               <Link to="/" className="link-item">
                 <li className="destop-item">Home</li>
               </Link>
-              <Link to="/" className="link-item">
+              <Link to="/popular" className="link-item">
                 <li className="destop-item">Popular</li>
               </Link>
             </ul>
@@ -43,7 +43,7 @@ class Header extends Component {
               type="button"
               data-testid="searchButton"
             >
-              <Link to="/">
+              <Link to="/search">
                 <HiOutlineSearch size={24} color="#ffffff" />
               </Link>
             </button>
@@ -58,7 +58,7 @@ class Header extends Component {
                 alt="failure view"
               />
             </button>
-            <Link to="/" className="link-item">
+            <Link to="/account" className="link-item">
               <img
                 src="https://res.cloudinary.com/dorgvlsce/image/upload/v1689004430/movies%20app/Avatar_yjoabb.png"
                 className="avatar"
@@ -74,10 +74,10 @@ class Header extends Component {
               <Link to="/" className="link-item">
                 <li className="hamburger-item">Home</li>
               </Link>
-              <Link to="/" className="link-item">
+              <Link to="/popular" className="link-item">
                 <li className="hamburger-item">Popular</li>
               </Link>
-              <Link to="/not-found" className="link-item">
+              <Link to="/account" className="link-item">
                 <li className="hamburger-item">Account</li>
               </Link>
             </ul>

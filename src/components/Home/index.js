@@ -47,7 +47,7 @@ class Home extends Component {
         posterPath: eachItem.poster_path,
         overview: eachItem.overview,
         id: eachItem.id,
-        title: eachItem.title,
+        name: eachItem.title,
       }))
 
       this.setState({

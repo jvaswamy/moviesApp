@@ -1,0 +1,61 @@
+.account-container {
+  background-color: #131313;
+  height: 100vh;
+}
+.account-content-container {
+  background-color: #ffffff;
+  margin: 20px;
+  padding-bottom: 50px;
+}
+.responsive-account-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 85%;
+  margin: auto;
+}
+.account-heading {
+  color: #131313;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.hr-line {
+  background-color: #cbd5e1;
+  width: 100%;
+  height: 2px;
+}
+.membership-container {
+  display: flex;
+}
+.membership-values-container {
+  /* margin-left: 12px; */
+}
+.heading-container {
+  width: 150px;
+}
+.heading {
+  color: #94a3b8;
+}
+
+.membership-detailse-container {
+  display: flex;
+}
+.premium {
+  margin-left: 8px;
+  border: 1px solid #1e293b;
+  border-radius: 2px;
+  font-size: 16px;
+}
+.logout-btn {
+  background-color: #e50914;
+  color: #ffffff;
+  padding: 8px 20px 8px 20px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  align-self: center;
+  margin-top: 36px;
+}

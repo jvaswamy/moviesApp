@@ -1,0 +1,77 @@
+/* header section */
+.search-container {
+  display: flex;
+  align-self: center;
+  background-color: transparent;
+  border: 1px solid #f8fafc;
+  height: 28px;
+  border-radius: 3px;
+  width: 140px;
+}
+@media screen and (min-width: 768px) {
+  .search-container {
+    width: 200px;
+  }
+}
+.search-input {
+  background-color: #0d0d0d;
+  color: #f8fafc;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 18px;
+  width: 100%;
+}
+.movie-search-button {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #131313;
+  width: 35px;
+}
+.search-logo {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.search-movies-container {
+  background-color: #131313;
+  min-height: 100vh;
+}
+
+.movie-list-container {
+  list-style-type: none;
+  padding-left: 0px;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* no movie list */
+.empty-list-container {
+  width: 80%;
+  margin: auto;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty-list-image {
+  width: 35%;
+}
+.empty-list-description {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .empty-list-description {
+    font-size: 26px;
+  }
+}
