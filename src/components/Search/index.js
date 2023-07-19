@@ -114,7 +114,7 @@ class Footer extends Component {
               <button
                 className="movie-search-button"
                 type="button"
-                testid="searchButton"
+                data-testid="searchButton"
                 onClick={this.onClickSearch}
               >
                 <HiOutlineSearch className="search-logo" />

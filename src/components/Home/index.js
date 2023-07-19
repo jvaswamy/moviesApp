@@ -47,7 +47,7 @@ class Home extends Component {
         posterPath: eachItem.poster_path,
         overview: eachItem.overview,
         id: eachItem.id,
-        name: eachItem.title,
+        title: eachItem.title,
       }))
 
       this.setState({
@@ -63,13 +63,15 @@ class Home extends Component {
     this.getHomePoster()
   }
 
-  renderSuccessView = () => {
+  renderSuccessView = index => {
     const {posterDetailsList} = this.state
 
     return (
       <div className="poster-responsive-container">
-        <h1 className="poster-title">{posterDetailsList[3].title}</h1>
-        <p className="poster-description">{posterDetailsList[3].overview}</p>
+        <h1 className="poster-title">{posterDetailsList[index].title}</h1>
+        <h1 className="poster-description">
+          {posterDetailsList[index].overview}
+        </h1>
         <button type="button" className="poster-button">
           Play
         </button>
@@ -93,7 +95,7 @@ class Home extends Component {
     </div>
   )
 
-  renderAllViews = () => {
+  renderAllViews = index => {
     const {apiStatus} = this.state
     switch (apiStatus) {
       case apiStatusConstants.failure:
@@ -101,7 +103,7 @@ class Home extends Component {
       case apiStatusConstants.inProgress:
         return this.renderInProgressView()
       case apiStatusConstants.success:
-        return this.renderSuccessView()
+        return this.renderSuccessView(index)
       default:
         return null
     }
@@ -147,10 +149,10 @@ class Home extends Component {
 
   render() {
     const {posterDetailsList} = this.state
-    // const index = Math.floor(Math.random() * posterDetailsList.length)
+    const index = Math.floor(Math.random() * posterDetailsList.length)
     const bgPoster =
       posterDetailsList.length > 0 &&
-      `url(${posterDetailsList[3].backdropPath})`
+      `url(${posterDetailsList[index].backdropPath})`
 
     return (
       <div className="home-container">
@@ -160,8 +162,8 @@ class Home extends Component {
             backgroundImage: bgPoster,
           }}
         >
-          <Header />
-          {this.renderAllViews()}
+          <Header isActiveName="home" />
+          {this.renderAllViews(index)}
         </div>
         <div className="home-movies-container">
           <h1 className="movie-category-heading">Trending Now</h1>

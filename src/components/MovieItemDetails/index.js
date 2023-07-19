@@ -95,6 +95,10 @@ class MovieItemDetails extends Component {
     )
   }
 
+  isClickItem = () => {
+    this.getMovieDetails()
+  }
+
   renderSuccesView = () => {
     const {movieDetails} = this.state
 
@@ -139,34 +143,37 @@ class MovieItemDetails extends Component {
             </button>
           </div>
         </div>
-        <div className="movie-content-container">
-          <div className="content-container">
-            <h1 className="content-heading">Genres</h1>
-            <ul className="content-list">
-              {genres.map(eachItem => this.movieGenerItem(eachItem))}
-            </ul>
-          </div>
-          <div className="content-container">
-            <h1 className="content-heading">Audio Available</h1>
-            <ul className="content-list">
-              {spokenLanguages.map(eachItem =>
-                this.movieLanguageItem(eachItem),
-              )}
-            </ul>
-          </div>
-          <div className="content-container">
-            <h1 className="content-heading">Rating Count</h1>
-            <p className="content-values">{voteCount}</p>
-            <h1 className="content-heading">Rating Average</h1>
-            <p className="content-values">{voteAverage}</p>
-          </div>
-          <div className="content-container">
-            <h1 className="content-heading">Budget</h1>
-            <p className="content-values">{budget}</p>
-            <h1 className="content-heading">Release Date</h1>
-            <p className="content-values">{date}</p>
+        <div className="movie-content-container-top">
+          <div className="movie-content-container">
+            <div className="content-container">
+              <h1 className="content-heading">Genres</h1>
+              <ul className="content-list">
+                {genres.map(eachItem => this.movieGenerItem(eachItem))}
+              </ul>
+            </div>
+            <div className="content-container">
+              <h1 className="content-heading">Audio Available</h1>
+              <ul className="content-list">
+                {spokenLanguages.map(eachItem =>
+                  this.movieLanguageItem(eachItem),
+                )}
+              </ul>
+            </div>
+            <div className="content-container">
+              <h1 className="content-heading">Rating Count</h1>
+              <p className="content-values">{voteCount}</p>
+              <h1 className="content-heading">Rating Average</h1>
+              <p className="content-values">{voteAverage}</p>
+            </div>
+            <div className="content-container">
+              <h1 className="content-heading">Budget</h1>
+              <p className="content-values">{budget}</p>
+              <h1 className="content-heading">Release Date</h1>
+              <p className="content-values">{date}</p>
+            </div>
           </div>
         </div>
+
         <h1 className="similar-movies-list-heading">More like this</h1>
         <ul className="similar-movies-list">
           {similarMovies.map(eachItem => (

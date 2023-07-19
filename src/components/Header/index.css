@@ -56,6 +56,18 @@
   font-size: 26px;
   margin-left: 18px;
 }
+.selected-home {
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  margin-left: 18px;
+}
+.selected-popular {
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  margin-left: 18px;
+}
 
 /* hamburger container */
 .hamburger-container {
@@ -101,7 +113,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 85%;
   height: 30px;
 }
 @media screen and (min-width: 768px) {

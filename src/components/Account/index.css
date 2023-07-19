@@ -32,7 +32,13 @@
   /* margin-left: 12px; */
 }
 .heading-container {
-  width: 150px;
+  width: 110px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-container {
+    width: 150px;
+  }
 }
 .heading {
   color: #94a3b8;
@@ -46,6 +52,12 @@
   border: 1px solid #1e293b;
   border-radius: 2px;
   font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .premium {
+    font-size: 16px;
+  }
 }
 .logout-btn {
   background-color: #e50914;

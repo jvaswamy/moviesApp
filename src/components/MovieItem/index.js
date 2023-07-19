@@ -3,6 +3,7 @@ import './index.css'
 
 const MovieItem = props => {
   const {itemDetails} = props
+
   const {posterPath, title, id} = itemDetails
   return (
     <li className="movie-list-item" data-testid="movieItem">

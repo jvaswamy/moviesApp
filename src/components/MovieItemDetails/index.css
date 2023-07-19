@@ -47,13 +47,15 @@
 
 /* header section */
 .header-poster-section {
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
   /* background-position: top; */
-  box-shadow: inset -10px -60px 50px #131313;
+
+  box-shadow: inset 0px -100px 50px #131313;
+  /* background-color: rgba(19, 19, 19, 0.9); */
 }
 @media screen and (min-width: 768px) {
   .header-poster-section {
@@ -67,7 +69,7 @@
 }
 .movie-title {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 22px;
   margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
@@ -118,6 +120,9 @@
 }
 
 /* movie details content containers */
+.movie-content-container-top {
+  box-shadow: inset 0px 30px 30px #131313;
+}
 .movie-content-container {
   display: flex;
   flex-wrap: wrap;

@@ -17,6 +17,12 @@ class Header extends Component {
 
   render() {
     const {isHamburgar} = this.state
+    const {isActiveName} = this.props
+    const homeClassName =
+      isActiveName === 'home' ? 'selected-home' : 'destop-item'
+    const popularClassName =
+      isActiveName === 'popular' ? 'selected-popular' : 'destop-item'
+
     return (
       <nav className="header-container">
         <div className="header-responsive">
@@ -30,10 +36,10 @@ class Header extends Component {
             </Link>
             <ul className="header-destop-list">
               <Link to="/" className="link-item">
-                <li className="destop-item">Home</li>
+                <li className={homeClassName}>Home</li>
               </Link>
               <Link to="/popular" className="link-item">
-                <li className="destop-item">Popular</li>
+                <li className={popularClassName}>Popular</li>
               </Link>
             </ul>
           </div>
